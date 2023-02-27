@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iBook-Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">iBook</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./dropdown/topics.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./dropdown/technology.html">Technology</a></li>
+                            <li><a class="dropdown-item" href="./dropdown/webdev.html">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./dropdown/support.html">Support</a></li>
+                            <li><a class="dropdown-item" href="./dropdown/write.html">Write for US</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Cover -->
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+
+                <span class="fs-4">iBook Store</span>
+            </a>
+        </header>
+
+        <main>
+            <h1>Get started with E-Notes</h1>
+            <p class="fs-5 col-md-8">eNotes was a free student and teacher educational website founded in 1998 by Brad
+                Satoris and Alexander Bloomingdale, that provides material to help students complete homework
+                assignments and study for exams. Based in Seattle, Washington, eNotes specializes in lesson plans, study
+                guides and literary criticisms. It also hosts an active homework help portal where students can ask
+                educators academic questions. The Homework Help section has hundreds of thousands of questions with
+                answers.</p>
+            <div class="col">
+                <div class="btn">
+                    <a href="./notes/CSS_Complete_Notes.pdf" class="btn btn-primary btn-lg px-4">CSS Notes</a>
+                </div>
+                <div class="btn">
+                    <a href="./notes/HTML_Complete_Notes.pdf" class="btn btn-primary btn-lg px-4">HTML Notes</a>
+                </div>
+                <div class="btn">
+                    <a href="./notes/KeyboardReferenceSheet.png" class="btn btn-primary btn-lg px-4">Shortcuts</a>
+                </div>
+            </div>
+
+
+
+            <hr class="col-3 col-md-2 mb-5">
+
+
+
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h2>Starter projects</h2>
+                    <p>Ready to beyond the starter template? Check out these open source projects that you can quickly
+                        duplicate to a new GitHub repository.</p>
+                    <ul class="icon-list ps-0">
+                        <li class="d-flex align-items-start mb-1"><a href="https://github.com/richerts7" rel="noopener"
+                                target="_blank">Github starter</a></li>
+                        <li class="text-muted d-flex align-items-start mb-1">github Parcel starter (coming soon!)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Guides</h2>
+                    <p>Read more detailed instructions and documentation on using or contributing to e-Notes.</p>
+                    <ul class="icon-list ps-0">
+                        <li class="d-flex align-items-start mb-1"><a href="https://www.enotes.com/">e-Notes quick start
+                                Study</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/docs/5.3/getting-started/webpack/">
+                                e-Note guide</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/docs/5.3/getting-started/parcel/">
+                                iBook guide</a></li>
+                        <li class="d-flex align-items-start mb-1"><a href="/docs/5.3/getting-started/vite/">
+                                student guide</a></li>
+                        <li class="d-flex align-items-start mb-1"><a
+                                href="/docs/5.3/getting-started/contribute/">Contributing to e-Notes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="pt-5 my-5 text-muted border-top">
+            Created by the @fun-tastic-four team. © 2023
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

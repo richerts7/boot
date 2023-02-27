@@ -1,0 +1,41 @@
+Basic Terminal commands :
+
+cd  <relative Path>                 -> navigate from one directory(folder) to another 
+pwd                                 -> shows the present working directory 
+ls(dir)                             -> lists all the files and folders in the current working directory 
+mkdir folder_name                   -> creates new directory in the current working directory 
+rmdir folder_name                   -> deletes a folder that we specify 
+notepad(touch) file_name            -> creates a file with the specified name 
+rm file_name                        -> deletes the file with the specified name 
+rm -r fodler_name                   -> force delete the folder(non empty folders can be delted ) 
+
+
+
+
+
+Basics & Push(upload) code to remote repositories :
+
+git init                                    -> intialises empty local repo 
+git add file_name                           -> adds files to local repo 
+git status                                  -> used to check the status of the local repo 
+git commit -m "message"                     -> used to commit changes 
+git remote add <alias_name>  <repo_url>     -> connects remote repo with local repo 
+git push -u <alias_name> <branch_name>      -> used to push a local branch to remote repo 
+
+Pull(download) code from remote repositories : 
+
+git pull <alias_name>                   -> fetches the changes made in server and 
+                                           merges with the corresponding branch in local repository
+git fetch <alias_name>                  -> Just downloads the changes made in remote repo 
+git merge <alias_name> /<branch_name>   -> merges the downloaded changes with the local branch 
+git clone <repo_url>                    -> clones(downloads) the remote repository 
+
+Branching :
+
+git branch (or) git branch --list       -> used to display the list of branches in current local repo 
+git branch <branch_name>                -> creates a brach with a branch name of <branch_name> 
+git checkout <branch_name>              -> changes the branch from current branch to <branch_name>
+git branch -M <new_name>                -> changes the current branch name to <new_name>
+git branch -d <brach_name>              -> safe delete branch 
+git branch -D <branch_name>             -> Force delete branch 
+git checkout -b <branch_name>           -> creates and checks out to <branch_name>
